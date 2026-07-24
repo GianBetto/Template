@@ -476,6 +476,38 @@
           </div>
         </article>
 
+        <!-- TEMPLATE 3 CARD -->
+        <article class="template-card">
+          <div class="card-preview">
+            <span class="card-preview-tag">TEMPLATE 03 &middot; ATTIVO</span>
+            <h2 class="card-preview-title">Essential, Readability &amp; Interactive Showcase</h2>
+          </div>
+
+          <div class="card-body">
+            <div>
+              <h3 class="card-title">Template 3: Leggibilità, Input UI &amp; Tabelle</h3>
+              <p class="card-desc">
+                Modello HTML5 e CSS3 ultra-minimalista incentrato su elevata leggibilità, layout ampio, controlli input, selezioni calendario e gestione avanzata tabelle dati con filtri per data.
+              </p>
+              
+              <div class="tag-stack">
+                <span class="tag">HTML5 Semantico</span>
+                <span class="tag">CSS Variables</span>
+                <span class="tag">Dark Mode Switch</span>
+                <span class="tag">Plus Jakarta Sans</span>
+                <span class="tag">Controlli UI &amp; Calendario</span>
+                <span class="tag">Tabelle &amp; Filtri Date</span>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <a href="./Template_3/index.html" class="btn-card">
+                Apri Template 3 &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </main>
@@ -489,10 +521,9 @@
   </footer>
 
   <script>
-    // SCRIPT SWITCH TEMA SCURO PER IL HUB
+    // SCRIPT SWITCH TEMA SCURO PER IL HUB (DEFAULT: CHIARO)
     const hubThemeToggle = document.getElementById('hub-theme-toggle');
     const storedTheme = localStorage.getItem('template-theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     function applyHubTheme(theme) {
       if (theme === 'dark') {
@@ -504,7 +535,7 @@
       }
     }
 
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+    if (storedTheme === 'dark') {
       applyHubTheme('dark');
     } else {
       applyHubTheme('light');

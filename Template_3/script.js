@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. TOGGLE TEMA SCURO (DARK MODE)
   const themeToggle = document.getElementById('theme-toggle');
   const storedTheme = localStorage.getItem('template-theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   function applyTheme(theme) {
     if (theme === 'dark') {
@@ -35,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+  // Impostazione iniziale del tema (default: chiaro)
+  if (storedTheme === 'dark') {
     applyTheme('dark');
   } else {
     applyTheme('light');
