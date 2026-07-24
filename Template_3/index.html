@@ -3,34 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template Editoriale HTML & CSS | Lorem Ipsum Showcase</title>
-  <meta name="description" content="Template HTML5 e CSS3 completo ed editoriale ispirato a design minimalisti di alto profilo. Dimostrazione completa di tutti gli elementi web.">
+  <title>Template 3 | Essential, Readability & Interactive Showcase</title>
+  <meta name="description" content="Modello HTML5 e CSS3 ultra-minimalista incentrato su elevata leggibilità, layout ampio, controlli input, selezioni calendario e gestione avanzata tabelle dati con filtri per data.">
   
-  <!-- Preconnect per Google Fonts -->
+  <!-- Google Fonts Preconnect per Plus Jakarta Sans, Inter e JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- Foglio di Stile -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- BARRA DI NAVIGAZIONE -->
+  <!-- NAVIGAZIONE MINIMALE -->
   <nav id="main-nav">
     <div class="nav-container">
-      <a href="../index.html" class="nav-brand" title="Torna al catalogo dei template">
-        Lorem<span>.</span>Ipsum
+      <a href="../index.html" class="nav-brand" title="Torna al catalogo">
+        Minimal<span>.</span>UI
       </a>
       
       <ul class="nav-links" id="nav-links">
         <li><a href="#typography">Tipografia</a></li>
-        <li><a href="#lists">Elenchi</a></li>
-        <li><a href="#cards">Card & Grid</a></li>
-        <li><a href="#forms">Moduli</a></li>
-        <li><a href="#tables">Tabelle</a></li>
-        <li><a href="#interactive">Componenti</a></li>
-        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#cards">Card</a></li>
+        <li><a href="#inputs">Controlli UI &amp; Calendario</a></li>
+        <li><a href="#tables">Tabelle &amp; Filtri Data</a></li>
+        <li><a href="#components">Componenti</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -38,7 +36,6 @@
           <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
           <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
-        <a href="#forms" class="btn-nav">Inizia Ora</a>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu navigazione">
           <span></span>
           <span></span>
@@ -48,827 +45,415 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <header id="hero" class="hero-section">
-    <div class="hero-container">
-      <div class="hero-eyebrow">// DOMINUS TEMPLATE &middot; DESIGN EDITORIALE</div>
-      
-      <h1 class="hero-title">
-        <span class="title-line">Lorem Ipsum</span>
-        <span class="title-line accent-text">Dolor Sit Amet</span>
-      </h1>
-
-      <div class="hero-bottom-grid">
-        <p class="hero-lead">
-          Consectetur <em>adipiscing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud <b>exercitation ullamco</b> laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#typography" class="btn-primary">Scopri gli Elementi &rarr;</a>
-          <a href="#interactive" class="btn-ghost">Vedi Componenti</a>
-        </div>
+  <!-- HERO SECTION MINIMALE -->
+  <header id="hero" class="hero-minimal">
+    <div class="container">
+      <span class="hero-tag">// LEGGIBILITÀ AVANZATA, INPUT UI &amp; TABELLE FILTRABILI</span>
+      <h1 class="hero-title">Layout Ampio. Controlli UI &amp; Tabelle Intelligenti.</h1>
+      <p class="hero-desc">
+        Un'interfaccia progettata con ampio respiro visivo, selettori di data/calendario, caselle di testo, menu a tendina e gestione tabelle avanzata con ordinamento ed intervallo date.
+      </p>
+      <div class="hero-actions">
+        <a href="#inputs" class="btn-minimal-primary">Vedi Controlli UI &rarr;</a>
+        <a href="#tables" class="btn-minimal-secondary">Prova Tabelle &amp; Filtri Date</a>
       </div>
-    </div>
-    
-    <div class="hero-scroll-indicator">
-      <span>Scorri per esplorare</span>
-      <div class="scroll-arrow">&darr;</div>
     </div>
   </header>
 
   <main>
-    <!-- SEZIONE 01: TIPOGRAFIA E TESTI -->
-    <section id="typography" class="section-padding border-bottom">
+    <!-- SEZIONE 01: TIPOGRAFIA MIGLIORATA -->
+    <section id="typography" class="section-minimal">
       <div class="container">
-        <header class="section-header">
-          <span class="section-number">01</span>
-          <h2 class="section-title">Gerarchia Tipografica e Stili Testuali</h2>
-        </header>
-
+        <div class="section-label">01 / TIPOGRAFIA AD ALTA LEGGIBILITÀ</div>
+        
         <div class="typography-grid">
-          <!-- Headings Showcase -->
-          <div class="headings-column">
-            <h3 class="subsection-label">Intestazioni (Headings)</h3>
-            <div class="heading-sample">
-              <h1>H1 &mdash; Lorem Ipsum Dolor</h1>
-              <span class="tag-mono">Cormorant Garamond / 3.2rem</span>
-            </div>
-            <div class="heading-sample">
-              <h2>H2 &mdash; Consectetur Adipiscing Elit</h2>
-              <span class="tag-mono">Inter Bold / 2.2rem</span>
-            </div>
-            <div class="heading-sample">
-              <h3>H3 &mdash; Sed Do Eiusmod Tempor Incididunt</h3>
-              <span class="tag-mono">Inter SemiBold / 1.6rem</span>
-            </div>
-            <div class="heading-sample">
-              <h4>H4 &mdash; Ut Labore Et Dolore Magna Aliqua</h4>
-              <span class="tag-mono">Inter SemiBold / 1.25rem</span>
-            </div>
-            <div class="heading-sample">
-              <h5>H5 &mdash; Quis Nostrud Exercitation Ullamco</h5>
-              <span class="tag-mono">Inter Medium / 1.05rem</span>
-            </div>
-            <div class="heading-sample">
-              <h6>H6 &mdash; Duis Aute Irure Dolor In Reprehenderit</h6>
-              <span class="tag-mono">JetBrains Mono / 0.85rem</span>
-            </div>
+          <div class="headings-demo">
+            <h1>H1 &mdash; Intestazione Chiara (Plus Jakarta Sans)</h1>
+            <h2>H2 &mdash; Sezione di Secondo Livello</h2>
+            <h3>H3 &mdash; Sottosezione e Dettagli</h3>
+            <h4>H4 &mdash; Titolo per Componenti Minori</h4>
           </div>
 
-          <!-- Formatting & Rich Text -->
-          <div class="body-column">
-            <h3 class="subsection-label">Stili del Testo di Corpo ed Elementi Inline</h3>
-            
+          <div class="body-demo">
             <p class="paragraph-lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+              L'adozione di pesi strutturati (Plus Jakarta Sans + Inter) garantisce nitidezza perfetta ed elimina le righe sottili dei font tradizionali.
             </p>
-
             <p>
-              È possibile utilizzare diversi elementi semantici di formattazione inline: 
-              <strong>testo in grassetto (strong)</strong> per dare enfasi forte, 
-              <em>testo in corsivo (em)</em> per sottolineare concetti chiave, 
-              e <mark>testo evidenziato (mark)</mark> per richiamare l'attenzione dell'utente.
+              Tutti gli elementi mantengono un contrasto calibrato (WCAG AA) ed un'interlinea ottimizzata sia nel Tema Chiaro che nel Tema Scuro.
             </p>
-
-            <p>
-              Inoltre abbiamo stili per <del>testo eliminato o obsoleto</del> e <ins>testo inserito di recente</ins>, 
-              oltre alla possibilità di definire abbreviazioni come <abbr title="HyperText Markup Language">HTML5</abbr> e 
-              <abbr title="Cascading Style Sheets">CSS3</abbr>. I comandi di tastiera sono rappresentati tramite il tag kbd: premi <kbd>Ctrl</kbd> + <kbd>C</kbd> per copiare.
-            </p>
-
-            <p>
-              Per le citazioni brevi inline si utilizza il tag q: <q>Lorem ipsum dolor sit amet</q>. 
-              Le informazioni temporali usano il tag time: <time datetime="2026-07-24">24 Luglio 2026</time>. 
-              Formule ed annotazioni supportano pedici come H<sub>2</sub>O ed apici come E = mc<sup>2</sup>.
-            </p>
-
-            <!-- Figure & Figcaption Showcase -->
-            <figure class="editorial-figure">
-              <div class="figure-graphic-placeholder">
-                <span class="fig-tag">// FIGURE &amp; FIGCAPTION SHOWCASE</span>
-                <span class="fig-text">Grafica Editoriale dimostrativa con didascalia semantica</span>
-              </div>
-              <figcaption><b>Figura 1.1</b> &mdash; Dimostrazione dell'elemento <code>&lt;figure&gt;</code> con didascalia <code>&lt;figcaption&gt;</code> per pubblicazioni e reportage.</figcaption>
-            </figure>
-
-            <!-- Address Block Showcase -->
-            <address class="editorial-address">
-              <strong>Recapito &amp; Autore (&lt;address&gt;)</strong><br>
-              Nome Cognome &middot; Developer &amp; Designer<br>
-              Studio Creativo &amp; Digital Lab<br>
-              Email: <a href="mailto:info@esempio.it">info@esempio.it</a> &middot; Italia
-            </address>
-
-            <!-- Blockquote -->
-            <blockquote class="editorial-blockquote">
-              <p>&ldquo;Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.&rdquo;</p>
-              <cite>&mdash; Cicero, <i>De Finibus Bonorum et Malorum</i> (45 a.C.)</cite>
-            </blockquote>
-
-            <!-- Code Block Showcase -->
-            <div class="code-box">
-              <div class="code-box-header">
-                <span class="code-lang">JavaScript</span>
-                <button class="btn-copy" id="copy-code-btn" data-code="function loremIpsum(numWords = 10) {\n  const words = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit'];\n  return Array.from({ length: numWords }, (_, i) => words[i % words.length]).join(' ');\n}">Copia codice</button>
-              </div>
-              <pre><code><span class="token-kw">function</span> <span class="token-fn">loremIpsum</span>(<span class="token-param">numWords</span> = <span class="token-num">10</span>) {
-  <span class="token-kw">const</span> words = [<span class="token-str">'lorem'</span>, <span class="token-str">'ipsum'</span>, <span class="token-str">'dolor'</span>, <span class="token-str">'sit'</span>, <span class="token-str">'amet'</span>, <span class="token-str">'consectetur'</span>];
-  <span class="token-kw">return</span> Array.<span class="token-fn">from</span>({ length: numWords }, (_, i) => words[i % words.length]).<span class="token-fn">join</span>(<span class="token-str">' '</span>);
-}</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEZIONE 02: ELENCHI E STRUTTURE DATI -->
-    <section id="lists" class="section-padding border-bottom surface-bg">
-      <div class="container">
-        <header class="section-header">
-          <span class="section-number">02</span>
-          <h2 class="section-title">Elenchi, Liste e Definizione Dati</h2>
-        </header>
-
-        <div class="lists-grid">
-          <!-- Unordered List -->
-          <div class="list-card">
-            <h3 class="list-card-title">Elenco Non Ordinato (Unordered List)</h3>
-            <ul class="custom-ul">
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Adipiscing elit sed do eiusmod tempor.</li>
-              <li>Incididunt ut labore et dolore magna aliqua.
-                <ul>
-                  <li>Sotto-elemento primo livello extra.</li>
-                  <li>Sotto-elemento secondo livello extra.</li>
-                </ul>
-              </li>
-              <li>Ut enim ad minim veniam quis nostrud.</li>
-              <li>Duis aute irure dolor in reprehenderit.</li>
-            </ul>
-          </div>
-
-          <!-- Ordered List -->
-          <div class="list-card">
-            <h3 class="list-card-title">Elenco Ordinato (Ordered List)</h3>
-            <ol class="custom-ol">
-              <li>Primo passaggio per la configurazione del sistema.</li>
-              <li>Fase di elaborazione dati e compilazione dei parametri.</li>
-              <li>Integrazione delle chiavi API e verifica di sicurezza.
-                <ol>
-                  <li>Verifica del certificato SSL/TLS.</li>
-                  <li>Autenticazione a due fattori (2FA).</li>
-                </ol>
-              </li>
-              <li>Esecuzione dei test unitari e di integrazione.</li>
-              <li>Rilascio finale in ambiente di produzione.</li>
-            </ol>
-          </div>
-
-          <!-- Description List -->
-          <div class="list-card span-full">
-            <h3 class="list-card-title">Elenco di Descrizione (Description List)</h3>
-            <dl class="custom-dl">
-              <div class="dl-group">
-                <dt>Lorem Ipsum</dt>
-                <dd>Testo fittizio utilizzato nel settore della tipografia e della stampa dal 1500.</dd>
-              </div>
-              <div class="dl-group">
-                <dt>Dolor Sit Amet</dt>
-                <dd>Frase latina di esempio utilizzata per mostrare l'aspetto visivo di un documento.</dd>
-              </div>
-              <div class="dl-group">
-                <dt>Consectetur Adipiscing</dt>
-                <dd>Principio di ottimizzazione layout senza distrazione del contenuto effettivo.</dd>
-              </div>
-              <div class="dl-group">
-                <dt>Eiusmod Tempor</dt>
-                <dd>Metrica di temporizzazione per animazioni e micro-interazioni CSS3 fluide.</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEZIONE 03: CARD E GRIGLIE -->
-    <section id="cards" class="section-padding border-bottom">
-      <div class="container">
-        <header class="section-header">
-          <span class="section-number">03</span>
-          <h2 class="section-title">Schede ed Elementi a Griglia</h2>
-        </header>
-
-        <!-- Featured Big Card -->
-        <article class="featured-card">
-          <div class="featured-content">
-            <div class="featured-eyebrow">// PROGETTO IN EVIDENZA</div>
-            <h3 class="featured-title">Magna Aliqua Ut Enim Ad Minim Veniam</h3>
-            <p class="featured-text">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div class="tag-stack">
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS Grid</span>
-              <span class="tag">Typography</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <a href="#forms" class="btn-primary card-cta">Esplora Progetto &rarr;</a>
-          </div>
-
-          <div class="featured-visual">
-            <div class="visual-inner">
-              <div class="visual-badge">PROTOTIPO V2.4</div>
-              <div class="visual-graphic">
-                <span class="graphic-circle"></span>
-                <span class="graphic-line"></span>
-                <span class="graphic-text">DESIGN SYSTEM</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 3-Column Card Grid -->
-        <div class="cards-grid">
-          <!-- Card 1 -->
-          <article class="standard-card">
-            <div class="card-header-meta">
-              <span class="card-category">CATEGORIA A</span>
-              <span class="card-date">24 LUGLIO 2026</span>
-            </div>
-            <h3 class="card-title"><a href="#">Dolor Sit Amet Consectetur</a></h3>
-            <p class="card-excerpt">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-            </p>
-            <div class="card-footer">
-              <span class="card-author">Redazione</span>
-              <span class="card-read-time">5 min lettura</span>
-            </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="standard-card">
-            <div class="card-header-meta">
-              <span class="card-category">CATEGORIA B</span>
-              <span class="card-date">22 LUGLIO 2026</span>
-            </div>
-            <h3 class="card-title"><a href="#">Nemo Enim Ipsam Voluptatem</a></h3>
-            <p class="card-excerpt">
-              Quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.
-            </p>
-            <div class="card-footer">
-              <span class="card-author">Team Design</span>
-              <span class="card-read-time">3 min lettura</span>
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="standard-card">
-            <div class="card-header-meta">
-              <span class="card-category">CATEGORIA C</span>
-              <span class="card-date">18 LUGLIO 2026</span>
-            </div>
-            <h3 class="card-title"><a href="#">Neque Porro Quisquam Est</a></h3>
-            <p class="card-excerpt">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-            </p>
-            <div class="card-footer">
-              <span class="card-author">Team Dev</span>
-              <span class="card-read-time">8 min lettura</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEZIONE 04: MODULI E CONTROLLI UI -->
-    <section id="forms" class="section-padding border-bottom surface-bg">
-      <div class="container">
-        <header class="section-header">
-          <span class="section-number">04</span>
-          <h2 class="section-title">Moduli di Contatto e Controlli UI</h2>
-        </header>
-
-        <div class="form-layout">
-          <form class="main-form" id="sample-form" onsubmit="event.preventDefault(); alert('Modulo inviato con successo!');">
             
-            <!-- Fieldset 1: Dati Generali -->
-            <fieldset class="form-fieldset">
-              <legend class="form-legend">Informazioni &amp; Contatto (&lt;fieldset&gt; / &lt;legend&gt;)</legend>
-              
-              <div class="form-grid">
-                <!-- Text Input con Datalist -->
-                <div class="form-group">
-                  <label for="fname">Nome Completo <span class="required">*</span></label>
-                  <input type="text" id="fname" name="fname" placeholder="Es. Mario Rossi" required>
-                  <span class="help-text">Inserisci nome e cognome.</span>
-                </div>
-
-                <!-- Email Input -->
-                <div class="form-group">
-                  <label for="email">Indirizzo Email <span class="required">*</span></label>
-                  <input type="email" id="email" name="email" placeholder="nome@esempio.it" required>
-                  <span class="help-text">Non condivideremo mai la tua email.</span>
-                </div>
-
-                <!-- Datalist Input -->
-                <div class="form-group">
-                  <label for="framework">Tecnologia (&lt;datalist&gt; Autocomplete)</label>
-                  <input type="text" id="framework" name="framework" list="framework-list" placeholder="Inizia a digitare (es. HTML5)...">
-                  <datalist id="framework-list">
-                    <option value="HTML5 & CSS3">
-                    <option value="JavaScript Vanilla">
-                    <option value="GIS & Python">
-                    <option value="Cormorant Garamond">
-                  </datalist>
-                </div>
-
-                <!-- Select Input -->
-                <div class="form-group">
-                  <label for="topic">Argomento di Interesse</label>
-                  <select id="topic" name="topic">
-                    <option value="" disabled selected>Seleziona un'opzione...</option>
-                    <option value="1">Lorem Ipsum Sviluppo Web</option>
-                    <option value="2">Dolor Sit Amet Design UI/UX</option>
-                    <option value="3">Consectetur Adipiscing Consulenza</option>
-                  </select>
-                </div>
-              </div>
-            </fieldset>
-
-            <!-- Fieldset 2: Parametri e Messaggio -->
-            <fieldset class="form-fieldset">
-              <legend class="form-legend">Parametri Progetto &amp; Messaggio</legend>
-              
-              <div class="form-grid">
-                <!-- Range Slider con Output Live -->
-                <div class="form-group span-full">
-                  <div class="range-header">
-                    <label for="budget-range">Budget stimato per il progetto (&lt;input type="range"&gt;):</label>
-                    <output id="budget-output" for="budget-range" class="mono-val">€ 5.000,00</output>
-                  </div>
-                  <input type="range" id="budget-range" name="budget" min="1000" max="20000" step="500" value="5000">
-                </div>
-
-                <!-- Textarea (Span Full) -->
-                <div class="form-group span-full">
-                  <label for="message">Messaggio o Note <span class="required">*</span></label>
-                  <textarea id="message" name="message" rows="4" placeholder="Scrivi qui il tuo messaggio in Lorem Ipsum..." required></textarea>
-                </div>
-              </div>
-            </fieldset>
-
-              <!-- Checkbox & Radio Section -->
-              <div class="form-group span-full controls-wrapper">
-                <div class="controls-column">
-                  <span class="controls-label">Opzioni Checkbox:</span>
-                  <label class="custom-checkbox">
-                    <input type="checkbox" name="opt1" checked>
-                    <span class="checkmark"></span>
-                    Accetto i termini di servizio e la Privacy Policy.
-                  </label>
-                  <label class="custom-checkbox">
-                    <input type="checkbox" name="opt2">
-                    <span class="checkmark"></span>
-                    Iscrivimi alla newsletter mensile.
-                  </label>
-                </div>
-
-                <div class="controls-column">
-                  <span class="controls-label">Selezione Radio:</span>
-                  <label class="custom-radio">
-                    <input type="radio" name="plan" value="basic" checked>
-                    <span class="radio-mark"></span>
-                    Piano Base (Lorem Standard)
-                  </label>
-                  <label class="custom-radio">
-                    <input type="radio" name="plan" value="pro">
-                    <span class="radio-mark"></span>
-                    Piano Pro (Ipsum Premium)
-                  </label>
-                </div>
-
-                <div class="controls-column">
-                  <span class="controls-label">Interruttori (Toggle Switches):</span>
-                  <label class="switch-container">
-                    <input type="checkbox" checked>
-                    <span class="switch-slider"></span>
-                    Notifiche email attive
-                  </label>
-                  <label class="switch-container">
-                    <input type="checkbox">
-                    <span class="switch-slider"></span>
-                    Modalità scura automatica
-                  </label>
-                </div>
-              </div>
-
-              <!-- Dropzone File Upload -->
-              <div class="form-group span-full">
-                <label>Caricamento Allegati</label>
-                <div class="dropzone-box" id="dropzone">
-                  <div class="dropzone-icon">&uarr;</div>
-                  <p class="dropzone-text">Trascina qui i tuoi file oppure <span>sfoglia</span></p>
-                  <span class="dropzone-sub">Formati supportati: PDF, PNG, JPG, ZIP (Max 10MB)</span>
-                  <input type="file" id="file-input" hidden>
-                </div>
-              </div>
-            </div>
-
-            <!-- Form Actions Buttons Showcase -->
-            <div class="form-actions-bar">
-              <button type="submit" class="btn-primary">Invia Messaggio</button>
-              <button type="reset" class="btn-secondary">Azzera Form</button>
-              <button type="button" class="btn-ghost" disabled>Pulsante Disabilitato</button>
-            </div>
-          </form>
+            <blockquote class="minimal-blockquote">
+              <p>&ldquo;La chiarezza nasce dall'allineamento millimetrico dei pesi visivi e degli spazi.&rdquo;</p>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SEZIONE 05: TABELLE DATI -->
-    <section id="tables" class="section-padding border-bottom">
+    <!-- SEZIONE 02: CARD GRID MINIMALE -->
+    <section id="cards" class="section-minimal alt-bg">
       <div class="container">
-        <header class="section-header">
-          <span class="section-number">05</span>
-          <h2 class="section-title">Tabelle Dati e Report Tabellari</h2>
-        </header>
+        <div class="section-label">02 / CARD &amp; LAYOUT AMPIO</div>
+        
+        <div class="cards-minimal-grid">
+          <article class="card-minimal">
+            <span class="card-tag">CONTROLLI UI</span>
+            <h3 class="card-title">Caselle di Testo &amp; Select</h3>
+            <p class="card-desc">
+              Ampia gamma di campi input, menu a tendina, autocompletamento e selettori data/ora stilizzati.
+            </p>
+            <a href="#inputs" class="card-link">Esplora Input &rarr;</a>
+          </article>
 
-        <div class="table-wrapper">
-          <table class="editorial-table">
+          <article class="card-minimal">
+            <span class="card-tag">DATI &amp; CALENDARIO</span>
+            <h3 class="card-title">Filtri Date &amp; Ordinamento</h3>
+            <p class="card-desc">
+              Ordinamento colonne con allineamento perfetto e filtri per intervallo temporale (Dal / Al).
+            </p>
+            <a href="#tables" class="card-link">Prova Tabelle &rarr;</a>
+          </article>
+
+          <article class="card-minimal">
+            <span class="card-tag">RESPONSIVE</span>
+            <h3 class="card-title">Bordi Ridotti &amp; Respiro</h3>
+            <p class="card-desc">
+              Container allargato a 1380px per ridurre i bordi laterali inutili e sfruttare lo schermo.
+            </p>
+            <a href="#hero" class="card-link">Inizio Pagina &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEZIONE 03: CASELLE DI TESTO, MENU A TENDINA & SELETTORI CALENDARIO -->
+    <section id="inputs" class="section-minimal">
+      <div class="container">
+        <div class="section-label">03 / CASELLE DI TESTO, MENU A TENDINA &amp; SELETTORI CALENDARIO</div>
+
+        <div class="inputs-showcase-grid">
+          <!-- Colonna 1: Caselle di Testo e Autocompletamento -->
+          <div class="input-card">
+            <h3 class="input-card-title">Caselle di Testo &amp; Autocompletamento</h3>
+            
+            <div class="form-group">
+              <label for="input-standard">Campo Testo Standard</label>
+              <input type="text" id="input-standard" placeholder="Es. Nome utente o titolo...">
+            </div>
+
+            <div class="form-group">
+              <label for="input-search-icon">Campo Testo con Icona Ricerca</label>
+              <div class="input-with-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="input-search-icon" placeholder="Cerca nel sistema...">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="input-datalist">Campo con Suggerimenti (&lt;datalist&gt;)</label>
+              <input type="text" id="input-datalist" list="tech-suggestions" placeholder="Inizia a digitare (es. JavaScript)...">
+              <datalist id="tech-suggestions">
+                <option value="HTML5 & CSS3">
+                <option value="JavaScript Vanilla">
+                <option value="Python & GIS">
+                <option value="Plus Jakarta Sans">
+              </datalist>
+            </div>
+          </div>
+
+          <!-- Colonna 2: Menu a Tendina (Select) -->
+          <div class="input-card">
+            <h3 class="input-card-title">Menu a Tendina (Select &amp; Option)</h3>
+
+            <div class="form-group">
+              <label for="select-single">Menu a Tendina Standard</label>
+              <select id="select-single">
+                <option value="" disabled selected>Seleziona un'opzione...</option>
+                <option value="1">Opzione A &mdash; Sviluppo Frontend</option>
+                <option value="2">Opzione B &mdash; Design Sistemico</option>
+                <option value="3">Opzione C &mdash; Data Analytics</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="select-grouped">Menu a Tendina con Gruppi (&lt;optgroup&gt;)</label>
+              <select id="select-grouped">
+                <optgroup label="Linguaggi Web">
+                  <option value="html">HTML5 / CSS3</option>
+                  <option value="js">JavaScript (ES6+)</option>
+                </optgroup>
+                <optgroup label="Database &amp; GIS">
+                  <option value="postgis">PostgreSQL / PostGIS</option>
+                  <option value="sqlite">SQLite Database</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+          <!-- Colonna 3: Selettori Calendario, Data & Ora -->
+          <div class="input-card">
+            <h3 class="input-card-title">Selettori Calendario, Data &amp; Ora</h3>
+
+            <div class="form-group">
+              <label for="input-date">Selettore Data Calendario (&lt;input type="date"&gt;)</label>
+              <input type="date" id="input-date" value="2026-07-24">
+            </div>
+
+            <div class="form-group">
+              <label for="input-month">Selettore Mese &amp; Anno (&lt;input type="month"&gt;)</label>
+              <input type="month" id="input-month" value="2026-07">
+            </div>
+
+            <div class="form-group">
+              <label for="input-time">Selettore Orario (&lt;input type="time"&gt;)</label>
+              <input type="time" id="input-time" value="14:30">
+            </div>
+          </div>
+
+          <!-- Colonna 4: Radio, Checkbox e Switch Toggle -->
+          <div class="input-card span-full-grid">
+            <h3 class="input-card-title">Selettori di Opzione: Radio, Checkbox &amp; Interruttori Toggle</h3>
+
+            <div class="controls-showcase-row">
+              <div class="control-box">
+                <span class="control-box-label">Pulsanti Radio:</span>
+                <label class="custom-radio">
+                  <input type="radio" name="ui-radio" value="1" checked>
+                  <span class="radio-mark"></span> Opzione Unica A
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="ui-radio" value="2">
+                  <span class="radio-mark"></span> Opzione Unica B
+                </label>
+              </div>
+
+              <div class="control-box">
+                <span class="control-box-label">Caselle Checkbox:</span>
+                <label class="custom-checkbox">
+                  <input type="checkbox" checked>
+                  <span class="checkmark"></span> Abilita notifiche desktop
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span> Salva preferenze locali
+                </label>
+              </div>
+
+              <div class="control-box">
+                <span class="control-box-label">Interruttore a Leva (Toggle Switch):</span>
+                <label class="switch-container">
+                  <input type="checkbox" checked id="toggle-demo">
+                  <span class="switch-slider"></span>
+                  Sincronizzazione automatica
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEZIONE 04: GESTIONE TABELLA DATI CON FILTRI E CALENDARIO -->
+    <section id="tables" class="section-minimal alt-bg">
+      <div class="container">
+        <div class="section-label">04 / GESTIONE TABELLA DATI, FILTRI &amp; CALENDARIO</div>
+
+        <!-- Strumenti di Ricerca, Filtro Stato, Categoria e Intervallo Date -->
+        <div class="table-toolbar">
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="table-search" placeholder="Cerca per progetto, categoria o ID..." aria-label="Cerca nella tabella">
+          </div>
+
+          <div class="filter-group">
+            <!-- Filtro Stato -->
+            <select id="table-filter-status" aria-label="Filtra per stato">
+              <option value="all">Tutti gli stati</option>
+              <option value="Completato">Completato</option>
+              <option value="In Corso">In Corso</option>
+              <option value="Pianificato">Pianificato</option>
+              <option value="In Sospeso">In Sospeso</option>
+            </select>
+
+            <!-- Filtro Categoria -->
+            <select id="table-filter-category" aria-label="Filtra per categoria">
+              <option value="all">Tutte le categorie</option>
+              <option value="Frontend">Frontend Dev</option>
+              <option value="Design">UI/UX Design</option>
+              <option value="Backend">Backend API</option>
+              <option value="Database">Database &amp; GIS</option>
+            </select>
+
+            <!-- Filtro Calendario (Intervallo Date) -->
+            <div class="date-range-filter">
+              <label for="table-date-start">Dal:</label>
+              <input type="date" id="table-date-start" aria-label="Data Inizio Filtro">
+              <label for="table-date-end">Al:</label>
+              <input type="date" id="table-date-end" aria-label="Data Fine Filtro">
+            </div>
+
+            <button type="button" class="btn-reset-filters" id="table-reset-btn" title="Azzera tutti i filtri">Azzera Filtri</button>
+          </div>
+        </div>
+
+        <!-- Bar info e conteggio righe -->
+        <div class="table-info-bar">
+          <span id="table-row-count" class="mono-info">Mostrando 6 di 6 elementi</span>
+          <span class="table-selected-count" id="table-selected-count">0 righe selezionate</span>
+        </div>
+
+        <!-- Tabella Dati Avanzata con Allineamento Intestazioni Perfetto -->
+        <div class="table-minimal-wrapper">
+          <table class="table-minimal" id="data-table">
             <thead>
               <tr>
-                <th># ID</th>
-                <th>Nome Progetto</th>
-                <th>Categoria</th>
-                <th>Data Inizio</th>
-                <th>Stato</th>
-                <th class="text-right">Valore (€)</th>
+                <th width="40" class="text-center"><input type="checkbox" id="select-all-rows" aria-label="Seleziona tutte le righe"></th>
+                <th class="sortable" data-sort="id">
+                  <div class="th-content"># ID <span class="sort-icon-box"><svg class="sort-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9l5-5 5 5"/><path d="M7 15l5 5 5-5"/></svg></span></div>
+                </th>
+                <th class="sortable" data-sort="name">
+                  <div class="th-content">Nome Progetto <span class="sort-icon-box"><svg class="sort-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9l5-5 5 5"/><path d="M7 15l5 5 5-5"/></svg></span></div>
+                </th>
+                <th class="sortable" data-sort="category">
+                  <div class="th-content">Categoria <span class="sort-icon-box"><svg class="sort-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9l5-5 5 5"/><path d="M7 15l5 5 5-5"/></svg></span></div>
+                </th>
+                <th class="sortable" data-sort="date">
+                  <div class="th-content">Data Inizio <span class="sort-icon-box"><svg class="sort-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9l5-5 5 5"/><path d="M7 15l5 5 5-5"/></svg></span></div>
+                </th>
+                <th class="sortable" data-sort="status">
+                  <div class="th-content">Stato <span class="sort-icon-box"><svg class="sort-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9l5-5 5 5"/><path d="M7 15l5 5 5-5"/></svg></span></div>
+                </th>
+                <th class="sortable text-right" data-sort="value">
+                  <div class="th-content text-right">Valore (€) <span class="sort-icon-box"><svg class="sort-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9l5-5 5 5"/><path d="M7 15l5 5 5-5"/></svg></span></div>
+                </th>
                 <th class="text-center">Azione</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr data-status="Completato" data-category="Frontend" data-date="2026-01-12">
+                <td class="text-center"><input type="checkbox" class="row-checkbox" aria-label="Seleziona riga 001"></td>
                 <td class="mono-id">#001</td>
-                <td><strong>Lorem Ipsum Redesign</strong></td>
-                <td>Sviluppo Web</td>
+                <td><strong>Design System Minimal</strong></td>
+                <td><span class="category-tag">Frontend</span></td>
                 <td>12 Gen 2026</td>
                 <td><span class="badge badge-success">Completato</span></td>
                 <td class="text-right mono-val">€ 4.500,00</td>
-                <td class="text-center"><a href="#" class="table-link">Vedi</a></td>
+                <td class="text-center"><button type="button" class="btn-action" onclick="alert('Dettagli Progetto #001')">Vedi</button></td>
               </tr>
-              <tr>
+              <tr data-status="In Corso" data-category="Design" data-date="2026-03-03">
+                <td class="text-center"><input type="checkbox" class="row-checkbox" aria-label="Seleziona riga 002"></td>
                 <td class="mono-id">#002</td>
-                <td><strong>Dolor Sit Amet App</strong></td>
-                <td>Mobile iOS</td>
+                <td><strong>Restyling UI Dashboard</strong></td>
+                <td><span class="category-tag">Design</span></td>
                 <td>03 Mar 2026</td>
                 <td><span class="badge badge-warning">In Corso</span></td>
                 <td class="text-right mono-val">€ 8.200,00</td>
-                <td class="text-center"><a href="#" class="table-link">Vedi</a></td>
+                <td class="text-center"><button type="button" class="btn-action" onclick="alert('Dettagli Progetto #002')">Vedi</button></td>
               </tr>
-              <tr>
+              <tr data-status="Pianificato" data-category="Database" data-date="2026-05-15">
+                <td class="text-center"><input type="checkbox" class="row-checkbox" aria-label="Seleziona riga 003"></td>
                 <td class="mono-id">#003</td>
-                <td><strong>Consectetur Audit GIS</strong></td>
-                <td>Database & GIS</td>
+                <td><strong>Ottimizzazione Database GIS</strong></td>
+                <td><span class="category-tag">Database</span></td>
                 <td>15 Mag 2026</td>
                 <td><span class="badge badge-info">Pianificato</span></td>
                 <td class="text-right mono-val">€ 3.100,00</td>
-                <td class="text-center"><a href="#" class="table-link">Vedi</a></td>
+                <td class="text-center"><button type="button" class="btn-action" onclick="alert('Dettagli Progetto #003')">Vedi</button></td>
               </tr>
-              <tr>
+              <tr data-status="In Sospeso" data-category="Backend" data-date="2026-06-01">
+                <td class="text-center"><input type="checkbox" class="row-checkbox" aria-label="Seleziona riga 004"></td>
                 <td class="mono-id">#004</td>
-                <td><strong>Eiusmod Branding Pack</strong></td>
-                <td>Design Grafico</td>
+                <td><strong>Integrazione API Payment</strong></td>
+                <td><span class="category-tag">Backend</span></td>
                 <td>01 Giu 2026</td>
                 <td><span class="badge badge-danger">In Sospeso</span></td>
                 <td class="text-right mono-val">€ 1.950,00</td>
-                <td class="text-center"><a href="#" class="table-link">Vedi</a></td>
+                <td class="text-center"><button type="button" class="btn-action" onclick="alert('Dettagli Progetto #004')">Vedi</button></td>
               </tr>
-              <tr>
+              <tr data-status="Completato" data-category="Frontend" data-date="2026-07-10">
+                <td class="text-center"><input type="checkbox" class="row-checkbox" aria-label="Seleziona riga 005"></td>
                 <td class="mono-id">#005</td>
-                <td><strong>Adipiscing Dashboard UI</strong></td>
-                <td>Frontend Dev</td>
+                <td><strong>Modulo Tabelle Interattive</strong></td>
+                <td><span class="category-tag">Frontend</span></td>
                 <td>10 Lug 2026</td>
                 <td><span class="badge badge-success">Completato</span></td>
                 <td class="text-right mono-val">€ 6.400,00</td>
-                <td class="text-center"><a href="#" class="table-link">Vedi</a></td>
+                <td class="text-center"><button type="button" class="btn-action" onclick="alert('Dettagli Progetto #005')">Vedi</button></td>
+              </tr>
+              <tr data-status="In Corso" data-category="Design" data-date="2026-07-20">
+                <td class="text-center"><input type="checkbox" class="row-checkbox" aria-label="Seleziona riga 006"></td>
+                <td class="mono-id">#006</td>
+                <td><strong>Ottimizzazione Accessibilità</strong></td>
+                <td><span class="category-tag">Design</span></td>
+                <td>20 Lug 2026</td>
+                <td><span class="badge badge-warning">In Corso</span></td>
+                <td class="text-right mono-val">€ 2.800,00</td>
+                <td class="text-center"><button type="button" class="btn-action" onclick="alert('Dettagli Progetto #006')">Vedi</button></td>
               </tr>
             </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="5"><strong>Totale Complessivo Progetti</strong></td>
-                <td class="text-right mono-val"><strong>€ 24.150,00</strong></td>
-                <td></td>
-              </tr>
-            </tfoot>
           </table>
-        </div>
-      </div>
-    </section>
 
-    <!-- SEZIONE 06: COMPONENTI INTERATTIVI (TABS, ACCORDION, ALERTS) -->
-    <section id="interactive" class="section-padding border-bottom surface-bg">
-      <div class="container">
-        <header class="section-header">
-          <span class="section-number">06</span>
-          <h2 class="section-title">Componenti Interattivi ed Alert</h2>
-        </header>
-
-        <!-- Alert Boxes Showcase -->
-        <div class="alerts-showcase">
-          <div class="alert alert-info">
-            <span class="alert-icon">ℹ</span>
-            <div class="alert-body">
-              <strong>Messaggio Informativo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
-            </div>
-          </div>
-
-          <div class="alert alert-success">
-            <span class="alert-icon">✓</span>
-            <div class="alert-body">
-              <strong>Operazione Riuscita:</strong> Operazione completata con successo senza alcun errore riscontrato.
-            </div>
-          </div>
-
-          <div class="alert alert-warning">
-            <span class="alert-icon">⚠</span>
-            <div class="alert-body">
-              <strong>Attenzione Richiesta:</strong> Alcuni dati inseriti potrebbero richiedere un'ulteriore verifica manuale.
-            </div>
-          </div>
-
-          <div class="alert alert-danger">
-            <span class="alert-icon">✕</span>
-            <div class="alert-body">
-              <strong>Errore di Sistema:</strong> Impossibile stabilire una connessione al server di destinazione.
-            </div>
+          <!-- Messaggio Nessun Risultato Trovato -->
+          <div id="no-results-msg" class="no-results-msg" style="display: none;">
+            Nessun elemento corrisponde ai filtri o all'intervallo temporale impostato.
           </div>
         </div>
 
-        <!-- Progress Bar & Native Dialog Modal Showcase -->
-        <div class="components-extra-grid">
-          <!-- Progress Bar Showcase -->
-          <div class="progress-box">
-            <h3 class="subsection-label">Barra di Progresso (&lt;progress&gt;)</h3>
-            <div class="progress-header">
-              <span>Stato completamento operazione:</span>
-              <span class="mono-val">75%</span>
-            </div>
-            <progress value="75" max="100"></progress>
-          </div>
-
-          <!-- Dialog Modal Showcase -->
-          <div class="modal-showcase">
-            <h3 class="subsection-label">Finestra Modal Nativa (&lt;dialog&gt;)</h3>
-            <p class="modal-showcase-desc">Clicca per aprire la finestra di dialogo nativa HTML5 senza librerie pesanti.</p>
-            <button type="button" class="btn-primary" id="open-dialog-btn">Apri Modal Nativo &rarr;</button>
+        <!-- Paginazione e Controlli -->
+        <div class="table-pagination">
+          <span class="pagination-info">Pagina 1 di 1</span>
+          <div class="pagination-controls">
+            <button type="button" class="btn-page" disabled>&laquo; Precedente</button>
+            <button type="button" class="btn-page active">1</button>
+            <button type="button" class="btn-page" disabled>Successivo &raquo;</button>
           </div>
         </div>
 
-        <!-- Native HTML5 Dialog Element -->
-        <dialog id="native-dialog" class="editorial-dialog">
-          <div class="dialog-header">
-            <h3>Finestra Modal Nativa</h3>
-            <button type="button" class="dialog-close-btn" id="close-dialog-btn" aria-label="Chiudi">&times;</button>
-          </div>
-          <div class="dialog-body">
-            <p>Questo è un popup nativo HTML5 gestito tramite l'elemento <code>&lt;dialog&gt;</code> ed attivato via JavaScript con il metodo <code>showModal()</code>.</p>
-            <p class="dialog-sub">Supporta il focus trap automatico e lo sfondo scuro <code>::backdrop</code> nativo sia in Light Mode che in Dark Mode.</p>
-          </div>
-          <div class="dialog-footer">
-            <button type="button" class="btn-secondary" id="cancel-dialog-btn">Chiudi</button>
-            <button type="button" class="btn-primary" id="confirm-dialog-btn">Conferma Operazione</button>
-          </div>
-        </dialog>
-
-        <div class="interactive-grid">
-          <!-- Tabbed Interface -->
-          <div class="tabs-container">
-            <h3 class="subsection-label">Schede Interattive (Tab)</h3>
-            <div class="tab-buttons">
-              <button class="tab-btn active" data-tab="tab-1">Tab Primo</button>
-              <button class="tab-btn" data-tab="tab-2">Tab Secondo</button>
-              <button class="tab-btn" data-tab="tab-3">Tab Terzo</button>
-            </div>
-            
-            <div class="tab-panels">
-              <div class="tab-panel active" id="tab-1">
-                <h4>Contenuto del Primo Tab</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                </p>
-              </div>
-
-              <div class="tab-panel" id="tab-2">
-                <h4>Contenuto del Secondo Tab</h4>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                </p>
-              </div>
-
-              <div class="tab-panel" id="tab-3">
-                <h4>Contenuto del Terzo Tab</h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion / FAQ Showcase -->
-          <div class="accordion-container">
-            <h3 class="subsection-label">Domande Frequenti (Accordion FAQ)</h3>
-            
+        <!-- Componenti Extra (Accordion & Dialog) -->
+        <div id="components" class="components-minimal-grid" style="margin-top: 3.5rem;">
+          <!-- Accordion FAQ -->
+          <div class="accordion-minimal">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Domande Frequenti</h3>
             <details class="accordion-item" open>
-              <summary class="accordion-header">
-                <span>Cos'è il testo Lorem Ipsum e perché si usa?</span>
-                <span class="accordion-icon">+</span>
-              </summary>
-              <div class="accordion-content">
-                <p>
-                  Il Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. 
-                  Il Lorem Ipsum è considerato il testo segnaposto standard sin dal 1500.
-                </p>
-              </div>
+              <summary>Come funziona il filtro calendario nella tabella?</summary>
+              <p>Selezionando una data di inizio nel campo "Dal" o una data di fine nel campo "Al", la tabella nasconderà automaticamente le righe al di fuori dell'intervallo specificato.</p>
             </details>
-
             <details class="accordion-item">
-              <summary class="accordion-header">
-                <span>Come posso personalizzare questo template CSS?</span>
-                <span class="accordion-icon">+</span>
-              </summary>
-              <div class="accordion-content">
-                <p>
-                  È sufficiente modificare le variabili CSS contenute nella sezione <code>:root</code> del file <code>style.css</code> per cambiare font, colori primari e spaziature.
-                </p>
-              </div>
-            </details>
-
-            <details class="accordion-item">
-              <summary class="accordion-header">
-                <span>Il layout è pienamente responsive?</span>
-                <span class="accordion-icon">+</span>
-              </summary>
-              <div class="accordion-content">
-                <p>
-                  Certamente. Il template utilizza le moderne CSS Grid e Flexbox insieme a funzioni fluide come <code>clamp()</code> per adattarsi ad ogni schermo.
-                </p>
-              </div>
+              <summary>Come sono allineate le intestazioni della tabella?</summary>
+              <p>Le intestazioni utilizzano contenitori ad allineamento flessibile centrate verticalmente con spaziatura identica (padding simmetrico sopra e sotto), per una resa estetica perfetta.</p>
             </details>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SEZIONE 07: METRICHE E TIMELINE -->
-    <section id="timeline" class="section-padding border-bottom">
-      <div class="container">
-        <header class="section-header">
-          <span class="section-number">07</span>
-          <h2 class="section-title">Indicatori Metrici e Timeline Storica</h2>
-        </header>
-
-        <!-- KPI Metrics Grid -->
-        <div class="metrics-grid">
-          <div class="metric-card">
-            <span class="metric-number">99.9%</span>
-            <span class="metric-label">Uptime del Servizio</span>
-            <span class="metric-sub">Basato su 365 giorni consecutivi</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="metric-number">12.5k</span>
-            <span class="metric-label">Download Modello</span>
-            <span class="metric-sub">In tutta la community open source</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="metric-number">&lt; 40ms</span>
-            <span class="metric-label">Tempo di Risposta</span>
-            <span class="metric-sub">Ottimizzazione delle risorse CSS/JS</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="metric-number">100/100</span>
-            <span class="metric-label">Punteggio Lighthouse</span>
-            <span class="metric-sub">Accessibilità, SEO e Performance</span>
-          </div>
-        </div>
-
-        <!-- Vertical Timeline -->
-        <div class="timeline-container">
-          <h3 class="subsection-label">Tappe ed Evoluzione Storica</h3>
-          
-          <div class="timeline">
-            <!-- Timeline Item 1 -->
-            <div class="timeline-item">
-              <div class="timeline-meta">
-                <span class="timeline-date">2026 &mdash; Presente</span>
-                <span class="timeline-tag">Fase Finale</span>
-              </div>
-              <div class="timeline-content">
-                <h4 class="timeline-title">Lancio Ufficiale del Template v3.0</h4>
-                <span class="timeline-location">Milano &middot; Italia</span>
-                <p>
-                  Completamento dell'architettura tipografica editoriale con integrazione di moduli avanzati, tabelle dati dinamiche ed accessibilità certificata.
-                </p>
-              </div>
-            </div>
-
-            <!-- Timeline Item 2 -->
-            <div class="timeline-item">
-              <div class="timeline-meta">
-                <span class="timeline-date">2025 &mdash; 2026</span>
-                <span class="timeline-tag">Refactoring</span>
-              </div>
-              <div class="timeline-content">
-                <h4 class="timeline-title">Evoluzione del Web Design System</h4>
-                <span class="timeline-location">Italia</span>
-                <p>
-                  Sviluppo di moduli interattivi per la visualizzazione dati e componenti UI ad alte prestazioni per piattaforme web.
-                </p>
-              </div>
-            </div>
-
-            <!-- Timeline Item 3 -->
-            <div class="timeline-item">
-              <div class="timeline-meta">
-                <span class="timeline-date">2024 &mdash; 2025</span>
-                <span class="timeline-tag">R&D</span>
-              </div>
-              <div class="timeline-content">
-                <h4 class="timeline-title">Pianificazione dell'Identità Visiva</h4>
-                <span class="timeline-location">Laboratorio Design</span>
-                <p>
-                  Ricerca tipografica sulle combinazioni Serif/Sans-serif e sperimentazione con i caratteri <i>Cormorant Garamond</i> e <i>Inter</i>.
-                </p>
-              </div>
-            </div>
+          <!-- Dialog Nativo Trigger -->
+          <div class="dialog-trigger-box">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Finestra Modal Nativa</h3>
+            <p>Finestra di dialogo nativa HTML5 attivabile via script:</p>
+            <button type="button" class="btn-minimal-secondary" id="open-dialog-btn">Apri Modal Nativo</button>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-top-grid">
-        <div class="footer-brand-col">
-          <a href="../index.html" class="footer-logo" title="Torna al catalogo dei template">Lorem<span>.</span>Ipsum</a>
-          <p class="footer-desc">
-            Modello HTML5 & CSS3 di livello editoriale ispirato a concetti di design minimalista, pulito ed elegante.
-          </p>
-          <div class="footer-socials">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="Twitter">Twitter</a>
-          </div>
-        </div>
-
-        <div class="footer-links-col">
-          <h4 class="footer-col-title">Navigazione Rapida</h4>
-          <ul>
-            <li><a href="#typography">Tipografia</a></li>
-            <li><a href="#lists">Elenchi</a></li>
-            <li><a href="#cards">Card Grid</a></li>
-            <li><a href="#forms">Moduli UI</a></li>
-            <li><a href="#tables">Tabelle</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4 class="footer-col-title">Risorse</h4>
-          <ul>
-            <li><a href="#">Documentazione</a></li>
-            <li><a href="#">Guida allo Stile</a></li>
-            <li><a href="#">Changelog v3.0</a></li>
-            <li><a href="#">Licenza MIT</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-newsletter-col">
-          <h4 class="footer-col-title">Iscriviti alla Newsletter</h4>
-          <p>Ricevi aggiornamenti sulle nuove funzionalità in Lorem Ipsum.</p>
-          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Iscrizione completata!');">
-            <input type="email" placeholder="La tua email..." required>
-            <button type="submit" class="btn-primary">&rarr;</button>
-          </form>
-        </div>
+  <!-- DIALOG MODALE NATIVO -->
+  <dialog id="native-dialog" class="dialog-minimal">
+    <div class="dialog-content">
+      <h3>Modal Nativo HTML5</h3>
+      <p>Questo popup utilizza l'elemento standard <code>&lt;dialog&gt;</code> con gestione nativa del focus e dello sfondo oscurato sia in Light che in Dark Mode.</p>
+      <div class="dialog-actions">
+        <button type="button" class="btn-minimal-secondary" id="close-dialog-btn">Chiudi</button>
       </div>
+    </div>
+  </dialog>
 
-      <div class="footer-bottom-bar">
-        <p>&copy; 2026 Lorem Ipsum Template. Modello Web Editoriale pronto all'uso.</p>
-        <a href="#hero" class="back-to-top" id="back-to-top">&uarr; Torna Su</a>
-      </div>
+  <!-- FOOTER MINIMALE -->
+  <footer class="footer-minimal">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Minimal UI Template. Ampio, Leggibile &amp; Interattivo.</p>
+      <a href="#hero" class="back-to-top" id="back-to-top">&uarr; Inizio Pagina</a>
     </div>
   </footer>
 
-  <!-- JS Principal -->
   <script src="script.js"></script>
 </body>
 </html>
