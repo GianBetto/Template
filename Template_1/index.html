@@ -34,6 +34,10 @@
       </ul>
 
       <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Cambia tema chiaro/scuro" title="Cambia tema (Chiaro/Scuro)">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
         <a href="#forms" class="btn-nav">Inizia Ora</a>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu navigazione">
           <span></span>
@@ -132,6 +136,29 @@
               oltre alla possibilità di definire abbreviazioni come <abbr title="HyperText Markup Language">HTML5</abbr> e 
               <abbr title="Cascading Style Sheets">CSS3</abbr>. I comandi di tastiera sono rappresentati tramite il tag kbd: premi <kbd>Ctrl</kbd> + <kbd>C</kbd> per copiare.
             </p>
+
+            <p>
+              Per le citazioni brevi inline si utilizza il tag q: <q>Lorem ipsum dolor sit amet</q>. 
+              Le informazioni temporali usano il tag time: <time datetime="2026-07-24">24 Luglio 2026</time>. 
+              Formule ed annotazioni supportano pedici come H<sub>2</sub>O ed apici come E = mc<sup>2</sup>.
+            </p>
+
+            <!-- Figure & Figcaption Showcase -->
+            <figure class="editorial-figure">
+              <div class="figure-graphic-placeholder">
+                <span class="fig-tag">// FIGURE &amp; FIGCAPTION SHOWCASE</span>
+                <span class="fig-text">Grafica Editoriale dimostrativa con didascalia semantica</span>
+              </div>
+              <figcaption><b>Figura 1.1</b> &mdash; Dimostrazione dell'elemento <code>&lt;figure&gt;</code> con didascalia <code>&lt;figcaption&gt;</code> per pubblicazioni e reportage.</figcaption>
+            </figure>
+
+            <!-- Address Block Showcase -->
+            <address class="editorial-address">
+              <strong>Recapito &amp; Autore (&lt;address&gt;)</strong><br>
+              Gianluca Bettoni &middot; GIS Application Engineer<br>
+              Politecnico di Milano / One Team S.p.A.<br>
+              Email: <a href="mailto:info@esempio.it">info@esempio.it</a> &middot; Bergamo, Italia
+            </address>
 
             <!-- Blockquote -->
             <blockquote class="editorial-blockquote">
@@ -325,43 +352,72 @@
 
         <div class="form-layout">
           <form class="main-form" id="sample-form" onsubmit="event.preventDefault(); alert('Modulo inviato con successo!');">
-            <div class="form-grid">
-              <!-- Text Input -->
-              <div class="form-group">
-                <label for="fname">Nome Completo <span class="required">*</span></label>
-                <input type="text" id="fname" name="fname" placeholder="Es. Mario Rossi" required>
-                <span class="help-text">Inserisci nome e cognome.</span>
-              </div>
+            
+            <!-- Fieldset 1: Dati Generali -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">Informazioni &amp; Contatto (&lt;fieldset&gt; / &lt;legend&gt;)</legend>
+              
+              <div class="form-grid">
+                <!-- Text Input con Datalist -->
+                <div class="form-group">
+                  <label for="fname">Nome Completo <span class="required">*</span></label>
+                  <input type="text" id="fname" name="fname" placeholder="Es. Mario Rossi" required>
+                  <span class="help-text">Inserisci nome e cognome.</span>
+                </div>
 
-              <!-- Email Input -->
-              <div class="form-group">
-                <label for="email">Indirizzo Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="nome@esempio.it" required>
-                <span class="help-text">Non condivideremo mai la tua email.</span>
-              </div>
+                <!-- Email Input -->
+                <div class="form-group">
+                  <label for="email">Indirizzo Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="nome@esempio.it" required>
+                  <span class="help-text">Non condivideremo mai la tua email.</span>
+                </div>
 
-              <!-- Select Input -->
-              <div class="form-group">
-                <label for="topic">Argomento di Interesse</label>
-                <select id="topic" name="topic">
-                  <option value="" disabled selected>Seleziona un'opzione...</option>
-                  <option value="1">Lorem Ipsum Sviluppo Web</option>
-                  <option value="2">Dolor Sit Amet Design UI/UX</option>
-                  <option value="3">Consectetur Adipiscing Consulenza</option>
-                </select>
-              </div>
+                <!-- Datalist Input -->
+                <div class="form-group">
+                  <label for="framework">Tecnologia (&lt;datalist&gt; Autocomplete)</label>
+                  <input type="text" id="framework" name="framework" list="framework-list" placeholder="Inizia a digitare (es. HTML5)...">
+                  <datalist id="framework-list">
+                    <option value="HTML5 & CSS3">
+                    <option value="JavaScript Vanilla">
+                    <option value="GIS & Python">
+                    <option value="Cormorant Garamond">
+                  </datalist>
+                </div>
 
-              <!-- Number Input -->
-              <div class="form-group">
-                <label for="quantity">Quantità Utenti</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="100" value="10">
+                <!-- Select Input -->
+                <div class="form-group">
+                  <label for="topic">Argomento di Interesse</label>
+                  <select id="topic" name="topic">
+                    <option value="" disabled selected>Seleziona un'opzione...</option>
+                    <option value="1">Lorem Ipsum Sviluppo Web</option>
+                    <option value="2">Dolor Sit Amet Design UI/UX</option>
+                    <option value="3">Consectetur Adipiscing Consulenza</option>
+                  </select>
+                </div>
               </div>
+            </fieldset>
 
-              <!-- Textarea (Span Full) -->
-              <div class="form-group span-full">
-                <label for="message">Messaggio o Note <span class="required">*</span></label>
-                <textarea id="message" name="message" rows="5" placeholder="Scrivi qui il tuo messaggio in Lorem Ipsum..." required></textarea>
+            <!-- Fieldset 2: Parametri e Messaggio -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">Parametri Progetto &amp; Messaggio</legend>
+              
+              <div class="form-grid">
+                <!-- Range Slider con Output Live -->
+                <div class="form-group span-full">
+                  <div class="range-header">
+                    <label for="budget-range">Budget stimato per il progetto (&lt;input type="range"&gt;):</label>
+                    <output id="budget-output" for="budget-range" class="mono-val">€ 5.000,00</output>
+                  </div>
+                  <input type="range" id="budget-range" name="budget" min="1000" max="20000" step="500" value="5000">
+                </div>
+
+                <!-- Textarea (Span Full) -->
+                <div class="form-group span-full">
+                  <label for="message">Messaggio o Note <span class="required">*</span></label>
+                  <textarea id="message" name="message" rows="4" placeholder="Scrivi qui il tuo messaggio in Lorem Ipsum..." required></textarea>
+                </div>
               </div>
+            </fieldset>
 
               <!-- Checkbox & Radio Section -->
               <div class="form-group span-full controls-wrapper">
@@ -549,6 +605,42 @@
             </div>
           </div>
         </div>
+
+        <!-- Progress Bar & Native Dialog Modal Showcase -->
+        <div class="components-extra-grid">
+          <!-- Progress Bar Showcase -->
+          <div class="progress-box">
+            <h3 class="subsection-label">Barra di Progresso (&lt;progress&gt;)</h3>
+            <div class="progress-header">
+              <span>Stato completamento operazione:</span>
+              <span class="mono-val">75%</span>
+            </div>
+            <progress value="75" max="100"></progress>
+          </div>
+
+          <!-- Dialog Modal Showcase -->
+          <div class="modal-showcase">
+            <h3 class="subsection-label">Finestra Modal Nativa (&lt;dialog&gt;)</h3>
+            <p class="modal-showcase-desc">Clicca per aprire la finestra di dialogo nativa HTML5 senza librerie pesanti.</p>
+            <button type="button" class="btn-primary" id="open-dialog-btn">Apri Modal Nativo &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Native HTML5 Dialog Element -->
+        <dialog id="native-dialog" class="editorial-dialog">
+          <div class="dialog-header">
+            <h3>Finestra Modal Nativa</h3>
+            <button type="button" class="dialog-close-btn" id="close-dialog-btn" aria-label="Chiudi">&times;</button>
+          </div>
+          <div class="dialog-body">
+            <p>Questo è un popup nativo HTML5 gestito tramite l'elemento <code>&lt;dialog&gt;</code> ed attivato via JavaScript con il metodo <code>showModal()</code>.</p>
+            <p class="dialog-sub">Supporta il focus trap automatico e lo sfondo scuro <code>::backdrop</code> nativo sia in Light Mode che in Dark Mode.</p>
+          </div>
+          <div class="dialog-footer">
+            <button type="button" class="btn-secondary" id="cancel-dialog-btn">Chiudi</button>
+            <button type="button" class="btn-primary" id="confirm-dialog-btn">Conferma Operazione</button>
+          </div>
+        </dialog>
 
         <div class="interactive-grid">
           <!-- Tabbed Interface -->

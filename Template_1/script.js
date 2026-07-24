@@ -109,4 +109,77 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // 6. GESTIONE DEL TEMA SCURO (DARK MODE TOGGLE)
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('template-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('template-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('template-theme', 'light');
+    }
+  }
+
+  // Impostazione iniziale del tema
+  if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+    applyTheme('dark');
+  } else {
+    applyTheme('light');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+  }
+
+  // 7. AGGIORNAMENTO DINAMICO INPUT RANGE ED OUTPUT
+  const budgetRange = document.getElementById('budget-range');
+  const budgetOutput = document.getElementById('budget-output');
+  if (budgetRange && budgetOutput) {
+    budgetRange.addEventListener('input', (e) => {
+      const val = Number(e.target.value).toLocaleString('it-IT', { minimumFractionDigits: 2 });
+      budgetOutput.textContent = `€ ${val}`;
+    });
+  }
+
+  // 8. GESTIONE FINESTRA MODAL NATIVA (<dialog>)
+  const nativeDialog = document.getElementById('native-dialog');
+  const openDialogBtn = document.getElementById('open-dialog-btn');
+  const closeDialogBtn = document.getElementById('close-dialog-btn');
+  const cancelDialogBtn = document.getElementById('cancel-dialog-btn');
+  const confirmDialogBtn = document.getElementById('confirm-dialog-btn');
+
+  if (nativeDialog && openDialogBtn) {
+    openDialogBtn.addEventListener('click', () => {
+      nativeDialog.showModal();
+    });
+
+    [closeDialogBtn, cancelDialogBtn, confirmDialogBtn].forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', () => {
+          nativeDialog.close();
+        });
+      }
+    });
+
+    // Chiudi il dialog cliccando sullo sfondo (backdrop)
+    nativeDialog.addEventListener('click', (e) => {
+      const rect = nativeDialog.getBoundingClientRect();
+      if (
+        e.clientX < rect.left ||
+        e.clientX > rect.right ||
+        e.clientY < rect.top ||
+        e.clientY > rect.bottom
+      ) {
+        nativeDialog.close();
+      }
+    });
+  }
 });
