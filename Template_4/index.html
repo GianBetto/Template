@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template 4 | Neo-Brutalist Celebration & Memory Showcase</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Template web Neo-Brutalista ad alto impatto visivo per celebrazioni, bacheche ricordi interattive, timeline e gestione dati con Dark Mode nativa.">
+  <meta name="keywords" content="template web, neo-brutalismo, bacheca ricordi, html5, css3, dark mode, leaflet map, polaroid, guestbook">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS per Mappe Interattive -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  
+  <!-- Custom CSS Template 4 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVBAR
+       ========================================== -->
+  <header class="main-header">
+    <div class="container header-container">
+      
+      <a href="../index.html" class="logo-brutalist">
+        <span class="logo-icon">♦</span>
+        <span>Template.04</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#ricordi" class="nav-link">Bacheca</a></li>
+          <li><a href="#postit" class="nav-link">Post-It</a></li>
+          <li><a href="#mappa" class="nav-link">Luoghi</a></li>
+          <li><a href="#cronologia" class="nav-link">Timeline</a></li>
+          <li><a href="#tabella" class="nav-link">Esami &amp; Dati</a></li>
+          <li><a href="#guestbook" class="nav-link">Auguri</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-sm btn-yellow" id="btn-share">Condividi 🔗</button>
+        
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Cambia tema chiaro/scuro" title="Cambia Tema (Dark Mode)">
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu di Navigazione">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <span class="badge-brutalist">🎓 CELEBRATION SHOWCASE</span>
+            <span style="font-family: var(--font-mono); font-size: 0.85rem;">// POLITECNICO DI MILANO</span>
+          </div>
+
+          <h1 class="hero-title">
+            CONGRATULAZIONI <br>
+            <span class="hero-title-highlight">DOTTORE MAGISTRALE!</span>
+          </h1>
+
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=80" alt="Foto del Laureato">
+            </div>
+            
+            <div class="hero-person-info">
+              <div class="hero-name">NOME E COGNOME</div>
+              <div class="hero-degree">Corso di Laurea in Ingegneria</div>
+            </div>
+          </div>
+
+          <p class="hero-description">
+            Una bacheca digitale ed interattiva costruita in stile <strong>Neo-Brutalista</strong> per raccogliere foto ricordi, messaggi augurali su Post-It, mappa dei luoghi storici del percorso di studio e la cronologia degli esami accademici.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#ricordi" class="btn btn-yellow">Esplora Ricordi ↓</a>
+            <a href="#guestbook" class="btn btn-pink">Lascia un Augurio 💬</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="polaroid-collage">
+            
+            <a href="#ricordi" class="polaroid-card polaroid-1" title="Vai alla Bacheca Ricordi">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&auto=format&fit=crop&q=80" alt="Giorno della Proclamazione">
+              <div class="polaroid-caption">Proclamazione 🎓</div>
+            </a>
+
+            <a href="#postit" class="polaroid-card polaroid-2" title="Vai alla Memory Board">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&auto=format&fit=crop&q=80" alt="Festa di Laurea">
+              <div class="polaroid-caption">Festa &amp; Brindisi 🎉</div>
+            </a>
+
+            <a href="#cronologia" class="polaroid-card polaroid-3" title="Vai alla Timeline Accademica">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&auto=format&fit=crop&q=80" alt="Studiare in Biblioteca">
+              <div class="polaroid-caption">Sessione Esami 📚</div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         STATISTICHE RAPIDE
+         ========================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-card card-yellow">
+            <div class="stat-number">110L</div>
+            <div class="stat-label">Voto Finale &amp; Lode</div>
+          </div>
+
+          <div class="stat-card card-pink">
+            <div class="stat-number">4.5</div>
+            <div class="stat-label">Anni Accademici</div>
+          </div>
+
+          <div class="stat-card card-cyan">
+            <div class="stat-number">28</div>
+            <div class="stat-label">Esami Superati</div>
+          </div>
+
+          <div class="stat-card card-mint">
+            <div class="stat-number">1500+</div>
+            <div class="stat-label">Caffè Consumati</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         BACHECA RICORDI (FILTERABLE GALLERY)
+         ========================================== -->
+    <section class="section-padding" id="ricordi">
+      <div class="container">
+        
+        <div class="section-header-brutalist centered">
+          <h2 class="section-title bg-yellow">Bacheca dei Ricordi</h2>
+          <p class="section-subtitle">Filtra per categoria ed esplora i momenti salienti del percorso di laurea.</p>
+        </div>
+
+        <div class="gallery-filter-bar">
+          <button class="filter-btn active" data-filter="all">Tutti i Ricordi</button>
+          <button class="filter-btn" data-filter="studio">Studio &amp; Campus</button>
+          <button class="filter-btn" data-filter="feste">Feste &amp; Eventi</button>
+          <button class="filter-btn" data-filter="viaggi">Viaggi &amp; Progetti</button>
+        </div>
+
+        <div class="gallery-grid">
+          
+          <article class="gallery-item" data-category="studio">
+            <div class="gallery-image-container">
+              <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&auto=format&fit=crop&q=80" alt="Aula Magna Politecnico">
+              <button class="btn btn-sm btn-yellow gallery-overlay-btn">🔍 Zoom</button>
+            </div>
+            <div class="gallery-content">
+              <div class="gallery-item-header">
+                <span class="gallery-tag">POLIMI</span>
+                <span class="gallery-date">15 Ott 2024</span>
+              </div>
+              <h3 class="gallery-title">Lezione in Aula Magna</h3>
+              <p class="gallery-desc">Prime lezioni di Ingegneria con i compagni di corso.</p>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="feste">
+            <div class="gallery-image-container">
+              <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80" alt="Festa di Laurea">
+              <button class="btn btn-sm btn-yellow gallery-overlay-btn">🔍 Zoom</button>
+            </div>
+            <div class="gallery-content">
+              <div class="gallery-item-header">
+                <span class="gallery-tag">CELEBRATION</span>
+                <span class="gallery-date">24 Lug 2026</span>
+              </div>
+              <h3 class="gallery-title">Il Brindisi Finale</h3>
+              <p class="gallery-desc">Festeggiando la discussione della tesi con amici e familiari.</p>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="viaggi">
+            <div class="gallery-image-container">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop&q=80" alt="Rilevamento sul Campo">
+              <p style="display:none">Sopralluogo Ambientale</p>
+              <button class="btn btn-sm btn-yellow gallery-overlay-btn">🔍 Zoom</button>
+            </div>
+            <div class="gallery-content">
+              <div class="gallery-item-header">
+                <span class="gallery-tag">FIELD WORK</span>
+                <span class="gallery-date">12 Mag 2025</span>
+              </div>
+              <h3 class="gallery-title">Sopralluogo sul Campo</h3>
+              <p class="gallery-desc">Analisi idrogeologica per il progetto di tesi magistrale.</p>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="studio">
+            <div class="gallery-image-container">
+              <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&auto=format&fit=crop&q=80" alt="Studio Notturno">
+              <button class="btn btn-sm btn-yellow gallery-overlay-btn">🔍 Zoom</button>
+            </div>
+            <div class="gallery-content">
+              <div class="gallery-item-header">
+                <span class="gallery-tag">LIBRARY</span>
+                <span class="gallery-date">03 Feb 2025</span>
+              </div>
+              <h3 class="gallery-title">Nottata di Esami</h3>
+              <p class="gallery-desc">Preparando Meccanica dei Fluidi prima della sessione invernale.</p>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="feste">
+            <div class="gallery-image-container">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&auto=format&fit=crop&q=80" alt="Corona d'Alloro">
+              <button class="btn btn-sm btn-yellow gallery-overlay-btn">🔍 Zoom</button>
+            </div>
+            <div class="gallery-content">
+              <div class="gallery-item-header">
+                <span class="gallery-tag">ALLORO</span>
+                <span class="gallery-date">24 Lug 2026</span>
+              </div>
+              <h3 class="gallery-title">La Corona di Alloro</h3>
+              <p class="gallery-desc">Tradizionale vestizione al termine della proclamazione ufficiale.</p>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="viaggi">
+            <div class="gallery-image-container">
+              <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&auto=format&fit=crop&q=80" alt="Viaggio Post Sessione">
+              <button class="btn btn-sm btn-yellow gallery-overlay-btn">🔍 Zoom</button>
+            </div>
+            <div class="gallery-content">
+              <div class="gallery-item-header">
+                <span class="gallery-tag">ROAD TRIP</span>
+                <span class="gallery-date">20 Set 2025</span>
+              </div>
+              <h3 class="gallery-title">Viaggio Post-Sessione</h3>
+              <p class="gallery-desc">Relax e viaggio in montagna per ricaricare le batterie dopo gli esami.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         BACHECA POST-IT INTERATTIVA
+         ========================================== -->
+    <section class="section-padding postit-section" id="postit">
+      <div class="container">
+        
+        <div class="section-header-brutalist centered">
+          <h2 class="section-title bg-pink">Memory Board (Post-It)</h2>
+          <p class="section-subtitle">Leggendo ed aggiungendo biglietti d'augurio dinamici alla bacheca dei ricordi.</p>
+        </div>
+
+        <div class="postit-grid" id="postit-grid">
+          
+          <div class="postit-card postit-yellow" style="--postit-tilt: -2deg;">
+            <div class="postit-pin"></div>
+            <div class="postit-header">
+              <span class="postit-author">Marco &amp; Giulia</span>
+              <span class="postit-tag">#AmiciDiStudio</span>
+            </div>
+            <div class="postit-body">
+              <p>Congratulazioni Dottore! 🎓 Hai dimostrato una tenacia incredibile. Ora ti aspetta un grande futuro da ingegnere!</p>
+            </div>
+            <div class="postit-footer">
+              <span>24 Luglio 2026</span>
+            </div>
+          </div>
+
+          <div class="postit-card postit-pink" style="--postit-tilt: 2.5deg;">
+            <div class="postit-pin"></div>
+            <div class="postit-header">
+              <span class="postit-author">Mamma &amp; Papà</span>
+              <span class="postit-tag">#Orgoglio</span>
+            </div>
+            <div class="postit-body">
+              <p>Siamo fieri di te! Il 110 e lode è il coronamento di tutti i tuoi sacrifici e della tua dedizione. Brava Dottore!</p>
+            </div>
+            <div class="postit-footer">
+              <span>24 Luglio 2026</span>
+            </div>
+          </div>
+
+          <div class="postit-card postit-cyan" style="--postit-tilt: -1.5deg;">
+            <div class="postit-pin"></div>
+            <div class="postit-header">
+              <span class="postit-author">Prof. Rossi</span>
+              <span class="postit-tag">#RelatoreTesi</span>
+            </div>
+            <div class="postit-body">
+              <p>Ottimo lavoro di ricerca e presentazione della tesi magistrale in modellistica idraulica. Tanti auguri per la tua carriera!</p>
+            </div>
+            <div class="postit-footer">
+              <span>24 Luglio 2026</span>
+            </div>
+          </div>
+
+          <div class="postit-card postit-mint" style="--postit-tilt: 3deg;">
+            <div class="postit-pin"></div>
+            <div class="postit-header">
+              <span class="postit-author">Gruppo Ingegneria</span>
+              <span class="postit-tag">#GruppoCaffè</span>
+            </div>
+            <div class="postit-body">
+              <p>Dai 1500 caffè in biblioteca al 110L! Prossima tappa: la grande festa stasera! 🍻🎉</p>
+            </div>
+            <div class="postit-footer">
+              <span>24 Luglio 2026</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FORM PER AGGIUNGERE DINAMICAMENTE UN POST-IT -->
+        <div class="add-postit-box">
+          <h3 class="add-postit-title">➕ Attacca un nuovo Post-It sulla bacheca</h3>
+          
+          <form id="add-postit-form">
+            <div class="controls-grid">
+              
+              <div class="form-group">
+                <label class="form-label" for="postit-author-input">Il Tuo Nome</label>
+                <input type="text" id="postit-author-input" class="form-control" placeholder="Es. Luca M." required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="postit-tag-select">Tag / Categoria</label>
+                <select id="postit-tag-select" class="form-control">
+                  <option value="#Auguri">#Auguri</option>
+                  <option value="#Amici">#Amici</option>
+                  <option value="#Famiglia">#Famiglia</option>
+                  <option value="#Polimi">#Polimi</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="postit-color-select">Colore Biglietto</label>
+                <select id="postit-color-select" class="form-control">
+                  <option value="yellow">Giallo Elettrico</option>
+                  <option value="pink">Rosa Shocking</option>
+                  <option value="cyan">Ciano Chiaro</option>
+                  <option value="mint">Verde Menta</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label class="form-label" for="postit-message-input">Messaggio Augurale</label>
+              <textarea id="postit-message-input" class="form-control" rows="3" placeholder="Scrivi il tuo messaggio qui..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-yellow w-full" style="margin-top: 1.2rem;">Attacca il Post-It 📌</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MAPPA DEI LUOGHI DEL CUORE
+         ========================================== -->
+    <section class="section-padding" id="mappa">
+      <div class="container">
+        
+        <div class="section-header-brutalist centered">
+          <h2 class="section-title bg-cyan">Mappa dei Luoghi del Cuore</h2>
+          <p class="section-subtitle">I punti storici del Politecnico, aule studio e luoghi dei festeggiamenti.</p>
+        </div>
+
+        <div class="map-container-brutalist">
+          <div class="map-controls">
+            <span class="badge-brutalist">📍 MAPPA INTERATTIVA LEAFLET</span>
+            
+            <div class="map-filter-group">
+              <button class="btn btn-sm btn-yellow" data-map-filter="all">Mostra Tutti</button>
+              <button class="btn btn-sm" data-map-filter="campus">Campus &amp; Studio</button>
+              <button class="btn btn-sm" data-map-filter="festa">Festa &amp; Brindisi</button>
+              <button class="btn btn-sm" data-map-filter="relax">Caffè &amp; Relax</button>
+            </div>
+          </div>
+
+          <div id="map"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CRONOLOGIA / TIMELINE ACCADEMICA
+         ========================================== -->
+    <section class="section-padding" id="cronologia">
+      <div class="container">
+        
+        <div class="section-header-brutalist centered">
+          <h2 class="section-title bg-blue">Cronologia Accademica</h2>
+          <p class="section-subtitle">Il percorso di studio dall'immatricolazione alla discussione di Laurea.</p>
+        </div>
+
+        <div class="timeline-brutalist">
+          
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">SETTEMBRE 2022</div>
+              <h3 class="timeline-title">Immatricolazione al Politecnico</h3>
+              <p class="timeline-desc">Inizio del corso di Laurea Magistrale in Ingegneria.</p>
+              <span class="badge-brutalist" style="margin-top: 0.5rem;">START</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">FEBBRAIO 2024</div>
+              <h3 class="timeline-title">Completamento Primi Esami Caratterizzanti</h3>
+              <p class="timeline-desc">Superamento con successo degli esami di Meccanica dei Fluidi e Geotecnica.</p>
+              <span class="badge-brutalist" style="margin-top: 0.5rem; background-color: var(--color-cyan);">EXAMS</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">MARZO 2025</div>
+              <h3 class="timeline-title">Avvio Lavoro di Tesi Magistrale</h3>
+              <p class="timeline-desc">Ricerche di laboratorio e modellistica numerica per la tesi di laurea in idrologia.</p>
+              <span class="badge-brutalist" style="margin-top: 0.5rem; background-color: var(--color-mint);">RESEARCH</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">24 LUGLIO 2026</div>
+              <h3 class="timeline-title">Discussione &amp; Proclamazione di Laurea</h3>
+              <p class="timeline-desc">Presentazione della tesi in Aula Magna, proclamazione a Dottore Magistrale con voto 110/110 e Lode.</p>
+              <span class="badge-brutalist" style="margin-top: 0.5rem; background-color: var(--color-pink); color: #fff;">110 &amp; LODE</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TABELLA DATI ACCADEMICA & CONTROLLI
+         ========================================== -->
+    <section class="section-padding table-section" id="tabella">
+      <div class="container">
+        
+        <div class="section-header-brutalist centered">
+          <h2 class="section-title bg-mint">Tabella Esami &amp; Dati Accademici</h2>
+          <p class="section-subtitle">Ricerca in tempo reale, filtri per categoria e conteggi interattivi.</p>
+        </div>
+
+        <div class="table-controls-card">
+          <div class="controls-grid">
+            
+            <div class="form-group">
+              <label class="form-label" for="table-search">Cerca Esame / Progetto</label>
+              <input type="text" id="table-search" class="form-control" placeholder="Es. Idraulica, Geotecnica...">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="table-filter-category">Filtra Categoria</label>
+              <select id="table-filter-category" class="form-control">
+                <option value="all">Tutte le Categorie</option>
+                <option value="base">Materie di Base</option>
+                <option value="caratterizzanti">Caratterizzanti</option>
+                <option value="tesi">Tesi &amp; Tirocinio</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="table-filter-status">Filtra Esito</label>
+              <select id="table-filter-status" class="form-control">
+                <option value="all">Tutti gli Esiti</option>
+                <option value="lode">Superato con Lode</option>
+                <option value="passed">Superato</option>
+                <option value="project">Progetto Approvato</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-yellow" id="table-reset-btn" style="width: 100%;">Reset Filtri 🔄</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="table-container-brutalist">
+          <table class="table-brutalist" id="data-table">
+            <thead>
+              <tr>
+                <th style="width: 40px; text-align: center;">
+                  <input type="checkbox" id="select-all-rows" class="custom-checkbox" aria-label="Seleziona Tutti">
+                </th>
+                <th>Codice</th>
+                <th>Insegnamento / Materia</th>
+                <th>CFU</th>
+                <th>Categoria</th>
+                <th>Voto / Esito</th>
+                <th>Data Superamento</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr data-category="caratterizzanti" data-status="lode">
+                <td style="text-align: center;"><input type="checkbox" class="custom-checkbox row-checkbox"></td>
+                <td><code>089123</code></td>
+                <td><strong>Meccanica dei Fluidi &amp; Idraulica</strong></td>
+                <td>12 CFU</td>
+                <td>Caratterizzanti</td>
+                <td><span class="table-status-tag status-praise">30 e Lode</span></td>
+                <td>18/02/2024</td>
+              </tr>
+
+              <tr data-category="caratterizzanti" data-status="passed">
+                <td style="text-align: center;"><input type="checkbox" class="custom-checkbox row-checkbox"></td>
+                <td><code>089124</code></td>
+                <td><strong>Geotecnica &amp; Meccanica delle Rocce</strong></td>
+                <td>10 CFU</td>
+                <td>Caratterizzanti</td>
+                <td><span class="table-status-tag status-passed">30 / 30</span></td>
+                <td>14/06/2024</td>
+              </tr>
+
+              <tr data-category="base" data-status="passed">
+                <td style="text-align: center;"><input type="checkbox" class="custom-checkbox row-checkbox"></td>
+                <td><code>089100</code></td>
+                <td><strong>Analisi Matematica &amp; Modelli</strong></td>
+                <td>10 CFU</td>
+                <td>Base</td>
+                <td><span class="table-status-tag status-passed">29 / 30</span></td>
+                <td>20/01/2023</td>
+              </tr>
+
+              <tr data-category="tesi" data-status="project">
+                <td style="text-align: center;"><input type="checkbox" class="custom-checkbox row-checkbox"></td>
+                <td><code>089999</code></td>
+                <td><strong>Tirocinio in Azienda</strong></td>
+                <td>15 CFU</td>
+                <td>Tesi &amp; Tirocinio</td>
+                <td><span class="table-status-tag status-project">Approvato</span></td>
+                <td>10/05/2025</td>
+              </tr>
+
+              <tr data-category="caratterizzanti" data-status="lode">
+                <td style="text-align: center;"><input type="checkbox" class="custom-checkbox row-checkbox"></td>
+                <td><code>089130</code></td>
+                <td><strong>Pianificazione dei Sistemi Territoriali</strong></td>
+                <td>8 CFU</td>
+                <td>Caratterizzanti</td>
+                <td><span class="table-status-tag status-praise">30 e Lode</span></td>
+                <td>12/09/2025</td>
+              </tr>
+
+              <tr data-category="tesi" data-status="lode">
+                <td style="text-align: center;"><input type="checkbox" class="custom-checkbox row-checkbox"></td>
+                <td><code>090000</code></td>
+                <td><strong>Tesi di Laurea Magistrale Finale</strong></td>
+                <td>15 CFU</td>
+                <td>Tesi &amp; Tirocinio</td>
+                <td><span class="table-status-tag status-praise">110/110 Lode</span></td>
+                <td>24/07/2026</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <div class="table-info-bar">
+            <div>Voci visibili: <strong id="table-visible-count">6</strong> di 6</div>
+            <div>Selezionate: <strong id="table-selected-count">0</strong></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FORM GUESTBOOK / RSVP & CONGRATULAZIONI
+         ========================================== -->
+    <section class="section-padding" id="guestbook">
+      <div class="container">
+        
+        <div class="section-header-brutalist centered">
+          <h2 class="section-title bg-yellow">Libro degli Auguri (Guestbook)</h2>
+          <p class="section-subtitle">Lascia un commento o un messaggio di congratulazioni per il neo Dottore.</p>
+        </div>
+
+        <div class="guestbook-card">
+          <form id="guestbook-form">
+            
+            <div class="controls-grid">
+              
+              <div class="form-group">
+                <label class="form-label" for="guest-name">Nome e Cognome *</label>
+                <input type="text" id="guest-name" class="form-control" placeholder="Es. Mario Rossi" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="guest-email">Email (Opzionale)</label>
+                <input type="email" id="guest-email" class="form-control" placeholder="mario@example.com">
+              </div>
+
+            </div>
+
+            <div class="form-group" style="margin-top: 1.2rem;">
+              <label class="form-label" for="guest-relation">Relazione / Ruolo</label>
+              <select id="guest-relation" class="form-control">
+                <option value="amico">Amico / Compagno di Corso</option>
+                <option value="famiglia">Familiare / Parente</option>
+                <option value="collega">Collega di Lavoro</option>
+                <option value="altro">Altro</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-top: 1.2rem;">
+              <label class="form-label" for="guest-message">Messaggio di Congratulazioni *</label>
+              <textarea id="guest-message" class="form-control" rows="4" maxlength="300" placeholder="Scrivi i tuoi auguri qui..." required></textarea>
+              <div class="char-counter"><span id="char-count">0</span> / 300 caratteri</div>
+            </div>
+
+            <div style="margin-top: 1.2rem; display: flex; align-items: center; gap: 0.6rem;">
+              <input type="checkbox" id="guest-privacy" class="custom-checkbox" required>
+              <label for="guest-privacy" style="font-size: 0.9rem; cursor: pointer;">Acconsento a pubblicare il messaggio sulla bacheca dei ricordi.</label>
+            </div>
+
+            <button type="submit" class="btn btn-yellow btn-lg w-full" style="margin-top: 1.8rem;">Invia Messaggio Augurale ✉️</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       MODAL LIGHTBOX PER FOTO & VIDEO
+       ========================================== -->
+  <div class="modal-overlay" id="lightbox-modal">
+    <div class="modal-brutalist">
+      <div class="modal-header">
+        <span class="modal-title">🔍 Visualizzazione Ricordo</span>
+        <button class="modal-close-btn" id="lightbox-close" aria-label="Chiudi Modal">&times;</button>
+      </div>
+      <div class="modal-body" id="lightbox-content">
+        <!-- Contenuto foto/video dinamico -->
+      </div>
+      <div class="modal-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast-notification">
+    <span id="toast-message">Messaggio di notifica</span>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div>
+          <div class="logo-brutalist" style="margin-bottom: 0.8rem;">
+            <span class="logo-icon">♦</span>
+            <span>Template.04</span>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--color-muted);">
+            Modello web in stile Neo-Brutalista con bacheca ricordi, note post-it, mappa interattiva e tabelle dati.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 0.8rem; font-size: 1rem;">Navigazione</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-family: var(--font-mono); font-size: 0.88rem;">
+            <li><a href="#hero">→ Home</a></li>
+            <li><a href="#ricordi">→ Bacheca Ricordi</a></li>
+            <li><a href="#postit">→ Memory Post-It</a></li>
+            <li><a href="#mappa">→ Mappa Luoghi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 0.8rem; font-size: 1rem;">Modello Hub</h4>
+          <p style="font-size: 0.9rem; color: var(--color-muted); margin-bottom: 0.8rem;">
+            Parte della raccolta ufficiale di modelli web HTML5, CSS3 e JavaScript Vanilla.
+          </p>
+          <a href="../index.html" class="btn btn-sm btn-yellow">Torna al Hub ←</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Template Hub. Tutti i diritti riservati.</div>
+        <div>Modello 04 &middot; Neo-Brutalism Showcase</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Leaflet JS per Mappe -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- Custom JS Template 4 -->
+  <script src="script.js"></script>
+
+</body>
+</html>

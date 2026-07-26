@@ -14,6 +14,7 @@
 | **Template 1** | **Design Editoriale & Portfolio**<br>Stile elegante con triade tipografica (*Cormorant Garamond*, *Inter*, *JetBrains Mono*), form UI, tabelle dati, schede e accordion. | [Apri Template 1](https://gianbetto.github.io/Template/Template_1/index.html) |
 | **Template 2** | **Componenti & UI Layout Showcase**<br>Showcase autonomo per dimostrazione elementi tipografici, form UI avanzati, modal nativi `<dialog>`, timeline e schede prodotto. | [Apri Template 2](https://gianbetto.github.io/Template/Template_2/index.html) |
 | **Template 3** | **Leggibilità, Controlli UI & Tabelle**<br>Layout ampio a griglia aperta (*Plus Jakarta Sans*), selettori di data/calendario, caselle di controllo e tabelle con ordinamento e filtri data. | [Apri Template 3](https://gianbetto.github.io/Template/Template_3/index.html) |
+| **Template 4** | **Neo-Brutalismo Celebrativo & Bacheca**<br>Stile Neo-Brutalista ad alto impatto (*Outfit*, *Space Grotesk*), bacheca foto polaroid con lightbox, note Post-It interattive dinamiche, mappa dei luoghi con Leaflet.js, timeline e tabella esami. | [Apri Template 4](https://gianbetto.github.io/Template/Template_4/index.html) |
 
 ---
 
@@ -41,7 +42,11 @@ Template/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
-└── Template_3/           # Modello 3: Leggibilità, Input UI & Tabelle
+├── Template_3/           # Modello 3: Leggibilità, Input UI & Tabelle
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+└── Template_4/           # Modello 4: Neo-Brutalismo Celebrativo & Bacheca
     ├── index.html
     ├── style.css
     └── script.js
